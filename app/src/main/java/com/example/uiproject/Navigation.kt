@@ -19,7 +19,9 @@ fun Navigation() {
 
         }
         composable("Home") {
-            Home()
+            Home(onQueryUpdate = { newValue ->
+
+            })
         }
     }
 }
