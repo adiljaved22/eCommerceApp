@@ -17,11 +17,28 @@ fun Navigation() {
                 navController = navController
             )
 
+
         }
         composable("Home") {
             Home(onQueryUpdate = { newValue ->
 
-            })
+            }, navController)
+
+        }
+        composable("Notification") {
+            Notification(navController)
+        }
+        composable("Favorite") {
+            Favorite(navController)
+        }
+        composable("Cart") {
+            Cart(navController)
+        }
+        composable("Profile") {
+            Profile(navController)
+        }
+        composable("Chair1") {
+            Chair1()
         }
     }
 }
